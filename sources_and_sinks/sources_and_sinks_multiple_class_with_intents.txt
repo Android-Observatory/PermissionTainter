@@ -1,0 +1,4 @@
+<org.imdea.networks.taintanalysistestleakpassword.PasswordManagerActivity: java.lang.String get_password()> -> _SOURCE_
+<org.imdea.networks.taintanalysistestleakpassword.PasswordLeakerService: void leak_password(java.lang.String)> -> _SINK_
+<com.example.startactivity.MainActivity: java.lang.String get_amazing_password()> -> _SOURCE_
+<android.widget.TextView: void setText(java.lang.CharSequence)> -> _SINK_

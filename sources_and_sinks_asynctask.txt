@@ -1,0 +1,2 @@
+<org.imdea.networks.taintanalysistestleakpassword.PasswordManagerActivity: java.lang.String get_password()> -> _SOURCE_
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_

@@ -1,0 +1,2 @@
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> -> _SOURCE_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_

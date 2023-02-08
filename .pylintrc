@@ -1,0 +1,2 @@
+[MASTER]
+init-hook='import sys; sys.path.append("/home/jgamba/dev/apk_taint_analysis")

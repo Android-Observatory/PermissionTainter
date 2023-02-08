@@ -1,0 +1,3 @@
+<org.imdea.networks.testbindservice.MainActivity: java.lang.String get_amazing_password()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> -> _SOURCE_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_

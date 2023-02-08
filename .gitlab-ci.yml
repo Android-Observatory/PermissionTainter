@@ -1,0 +1,21 @@
+pytest:
+  stage: test
+  before_script:
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan -p 2222 -H git.homezone-project.com >> ~/.ssh/known_hosts
+    - chmod 400 <your_ssh_key>
+    - eval $(ssh-agent -s)
+    - ssh-add <your_ssh_key>
+  script:
+    - pip3 install -r requirements.txt
+    - rm -rf /home/gitlab-runner/androguard/
+    - git clone ssh://git@git.homezone-project.com:2222/edu/androguard.git /home/gitlab-runner/androguard/
+      # Note: do the same for DEXTripador when needed
+    - sed -i 's/ANDROGUARD_PATH=[a-zA-Z/_]*/ANDROGUARD_PATH=\/home\/gitlab-runner\/androguard\//' config.ini
+    - pytest-3 --junitxml=report.xml test.py
+  only:
+    - merge_requests
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml

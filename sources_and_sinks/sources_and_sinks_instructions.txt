@@ -1,0 +1,8 @@
+<org.imdea.networks.MainActivity: int getIntPassword()> -> _SOURCE_
+<org.imdea.networks.MainActivity: float getFloatPassword()> -> _SOURCE_
+<org.imdea.networks.MainActivity: short getShortPassword()> -> _SOURCE_
+<org.imdea.networks.MainActivity: boolean getBooleanPassword()> -> _SOURCE_
+<org.imdea.networks.MainActivity: long getLongPassword()> -> _SOURCE_
+<org.imdea.networks.MainActivity: byte getBytePassword()> -> _SOURCE_
+
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_

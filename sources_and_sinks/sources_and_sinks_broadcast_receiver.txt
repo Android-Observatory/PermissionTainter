@@ -1,0 +1,2 @@
+<org.imdea.networks.testbroadcastreceiver.MainActivity: java.lang.String get_amazing_password()> -> _SOURCE_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_

@@ -1,0 +1,2 @@
+<org.imdea.networks.taintanalysistestleakpassword.PasswordManager: java.lang.String get_password()> -> _SOURCE_
+<org.imdea.networks.taintanalysistestleakpassword.PasswordLeaker: void leak_password(java.lang.String)> -> _SINK_
